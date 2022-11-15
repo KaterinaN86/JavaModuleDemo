@@ -1,7 +1,7 @@
 package org.example.assignment2;
 
 import org.example.assignment2.exceptions.StringFormatException;
-import org.example.assignment2.exceptions.StringLengthOutOfBounds;
+import org.example.assignment2.exceptions.StringLengthOutOfBoundsException;
 import org.example.assignment2.readers.ReadWriteFromFile;
 
 import java.util.ArrayList;
@@ -88,11 +88,11 @@ public class FileIOSolution {
         try {
             // the length of the string is validated first
             if (in.length() <= 0 && in.length() > 200000)
-                throw new StringLengthOutOfBounds("Input string length is out of bounds!");
+                throw new StringLengthOutOfBoundsException("Input string length is out of bounds!");
             //checking if the string is made up of letters only
             if (!in.matches("[A-Z]+"))
                 throw new StringFormatException("String must contain only uppercase letters!");
-        } catch (StringFormatException | StringLengthOutOfBounds e) {
+        } catch (StringFormatException | StringLengthOutOfBoundsException e) {
             System.out.println(e.getMessage());
             e.printStackTrace();
             return false;
