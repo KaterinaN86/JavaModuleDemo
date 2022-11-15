@@ -17,21 +17,20 @@ public class Main {
         System.out.println("Looking for BALLOON");
         for (String input: listOfInputs
              ) {
-            System.out.println(solution.solution(input));
+            System.out.println("Number of moves for input '"+input+"': "+solution.solution(input));
         }
-
-
+        System.out.println("************************************************************************");
         Solution2 solution2 = new Solution2("KATE");
         ArrayList<String> listOfInputs2 = new ArrayList<String>();
         listOfInputs2.add("KATERINA");
         listOfInputs2.add("MYNAMEIS KATE KATE IS MY NAME");
         listOfInputs2.add("SOMETHING");
-        listOfInputs2.add("ONLABLABLOON");
-        listOfInputs2.add("HEYBKATEALLOONHOWAREYOUBKATEALLOONMYBALLOONHEYBKATEALLOON");
+        listOfInputs2.add("ONLABkateLABLOON");
+        listOfInputs2.add("HEYBALLOONHOWAREYOUBKATEALLOONMYBALLOONHEYBKATEALLOON");
         System.out.println("Looking for KATE");
         for (String input: listOfInputs2
         ) {
-            System.out.println(solution2.solution(input));
+            System.out.println("Number of moves for input '"+input+"': "+solution2.solution(input));
         }
     }
 

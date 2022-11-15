@@ -69,13 +69,37 @@ public class Solution2 {
         return new Result(result, true);
     }
 
-    public int solution(String S) {
-        S=S.toUpperCase();
+    private boolean validateInputString(String in) {
+        // the length of the string is validated first
+        if (in.length() >= 0 && in.length() <= 200000) {
+            //checking if the string is made up of letters only
+            if (in.matches("[A-Z]+"))
+                return true;
+            else {
+                System.out.println("String must contain only uppercase letters!");
+                return false;
+            }
+        }
+        System.out.println("String length is out of bounds!");
+        return false;
+    }
+
+    /**
+     * Method that counts appearances of specified word in the string received as a parameter (moves in which we can delete the specified word from the string). If the string is invalid -1 is returned.
+     *
+     * @param s (string that is being searched through)
+     * @return int (number of times the word has been found)
+     */
+    public int solution(String s) {
+        if (!validateInputString(s)) {
+            System.out.println("The string " + s + " is not valid as input!");
+            return -1;
+        }
         //control variable for counting how many times the specified word has been found
         int result = 0;
         //the loop will run until the if statement is entered
         while (true) {
-            Result r = shortenInputString(S, this.word);
+            Result r = shortenInputString(s, this.word);
             //if a letter is missing isShortened property of Result object will be false and the loop is exited
             if (!r.isShortened) {
                 break;
@@ -83,7 +107,7 @@ public class Solution2 {
             //incrementing variable that counts how many times the word has been found
             result++;
             //input string is reinitialized to the trimmed string without found letters
-            S = r.result;
+            s = r.result;
         }
         //number of times the word has been found
         return result;

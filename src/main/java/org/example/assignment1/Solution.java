@@ -51,16 +51,40 @@ public class Solution {
         //trimmed string is returned
         return in;
     }
+    private boolean validateInputString(String in) {
+        // the length of the string is validated first
+        if (in.length() >= 0 && in.length() <= 200000) {
+            //checking if the string is made up of letters only
+            if (in.matches("[A-Z]+"))
+                return true;
+            else {
+                System.out.println("String must contain only uppercase letters!");
+                return false;
+            }
+        }
+        System.out.println("String length is out of bounds!");
+        return false;
+    }
 
-    public int solution(String S) {
-        S=S.toUpperCase();
+    /**
+     * Method that counts appearances of specified word in the string received as a parameter (moves in which we can delete the specified word from the string). If the string is invalid -1 is returned.
+     *
+     * @param s (string that is being searched through)
+     * @return int (number of times the word has been found)
+     */
+
+    public int solution(String s) {
+        if (!validateInputString(s)) {
+            System.out.println("The string " + s + " is not valid as input!");
+            return -1;
+        }
         //remaining string after first search
-        String remainingLetters = performSearch(this.word, S);
+        String remainingLetters = performSearch(this.word, s);
         // return value when not all letters are found
-        if (remainingLetters.length() > S.length() - this.word.length())
+        if (remainingLetters.length() > s.length() - this.word.length())
             return 0;
         //return value when the specified word can only be contained once
-        if ((remainingLetters.length() < this.word.length()) && (remainingLetters.length() == S.length() - this.word.length()))
+        if ((remainingLetters.length() < this.word.length()) && (remainingLetters.length() == s.length() - this.word.length()))
             return 1;
         //if this line is executed the specified word has already been found once
         int result = 1;
