@@ -34,8 +34,9 @@ public class Solution {
 
     /**
      * helper function that trims the input string by removing letters the specified word consists of
+     *
      * @param word (searched word)
-     * @param in  (input string to search through)
+     * @param in   (input string to search through)
      * @return String (input string without found letters)
      */
     private String performSearch(String word, String in) {
@@ -43,7 +44,7 @@ public class Solution {
         for (char letter : word.toCharArray()) {
             int index = in.indexOf(letter);
             //if letter is not found index is -1
-            if (index !=-1) {
+            if (index != -1) {
                 //input string is trimmed, found letter is removed
                 in = trimInputString(in, index);
             }
@@ -51,6 +52,7 @@ public class Solution {
         //trimmed string is returned
         return in;
     }
+
     private boolean validateInputString(String in) {
         // the length of the string is validated first
         if (in.length() >= 0 && in.length() <= 200000) {
@@ -72,7 +74,6 @@ public class Solution {
      * @param s (string that is being searched through)
      * @return int (number of times the word has been found)
      */
-
     public int solution(String s) {
         if (!validateInputString(s)) {
             System.out.println("The string " + s + " is not valid as input!");

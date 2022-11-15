@@ -5,12 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="499fa514-3f10-4eae-9dcf-25a11ac259f5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_14_2022_3_43_PM__Changes_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assignment2/FileIOSolution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assignment2/exceptions/EmptyFileException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assignment2/exceptions/IncorrectFilePathException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assignment2/exceptions/ReaderNotInitializedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assignment2/exceptions/StringFormatException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assignment2/exceptions/StringLengthOutOfBounds.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assignment2/readers/ReadWriteFromFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/empty.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/inputStrings.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/results.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assignment1/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assignment1/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assignment1/Solution2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assignment1/Solution2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +52,15 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kneumova\IdeaProjects\JavaModuleDemo\src\main\resources" />
+      <recent name="C:\Users\kneumova\IdeaProjects\JavaModuleDemo\src\main\java\org\example\assignment2" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.assignment2" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />

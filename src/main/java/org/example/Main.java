@@ -2,6 +2,8 @@ package org.example;
 
 import org.example.assignment1.Solution;
 import org.example.assignment1.Solution2;
+import org.example.assignment2.FileIOSolution;
+import org.example.assignment2.readers.ReadWriteFromFile;
 
 import java.util.ArrayList;
 
@@ -32,7 +34,9 @@ public class Main {
         ) {
             System.out.println("Number of moves for input '"+input+"': "+solution2.solution(input));
         }
+        //Read and write operations
+        FileIOSolution ioSolution = new FileIOSolution("BALLOON","src\\\\main\\\\resources\\\\inputStrings.txt");
+        ioSolution.readInputAndWriteResult();
     }
-
 
 }
