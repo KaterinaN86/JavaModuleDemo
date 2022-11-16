@@ -84,20 +84,14 @@ public class FileIOSolution {
     }
 
     //validating string read from file by using custom exceptions
-    private boolean validateInputString(String in) {
-        try {
-            // the length of the string is validated first
-            if (in.length() <= 0 && in.length() > 200000)
-                throw new StringLengthOutOfBoundsException("Input string length is out of bounds!");
-            //checking if the string is made up of letters only
-            if (!in.matches("[A-Z]+"))
-                throw new StringFormatException("String must contain only uppercase letters!");
-        } catch (StringFormatException | StringLengthOutOfBoundsException e) {
-            System.out.println(e.getMessage());
-            e.printStackTrace();
-            return false;
-        }
-            return true;
+    private void validateInputString(String in) throws StringLengthOutOfBoundsException, StringFormatException {
+
+        // the length of the string is validated first
+        if (in.length() <= 0 && in.length() > 200000)
+            throw new StringLengthOutOfBoundsException("Input string length is out of bounds!");
+        //checking if the string is made up of letters only
+        if (!in.matches("[A-Z]+"))
+            throw new StringFormatException(in + " is not valid input! String must contain only uppercase letters!");
     }
 
     /**
@@ -107,9 +101,11 @@ public class FileIOSolution {
      * @return int (number of times the word has been found)
      */
     public int solution(String s) {
-
-        if (!validateInputString(s)) {
-            System.out.println("The string " + s + " is not valid as input!");
+        try {
+            validateInputString(s);
+        } catch (StringFormatException | StringLengthOutOfBoundsException e) {
+            System.out.println(e.getMessage());
+            e.printStackTrace();
             return -1;
         }
         //control variable for counting how many times the specified word has been found

@@ -18,6 +18,14 @@ public class ReadWriteFromFile {
         this.inputFile = new File(filePath);
         this.outputFile = new File("src\\main\\resources\\results.txt");
     }
+    public ReadWriteFromFile() {
+    }
+    public File getOutputFile() {
+        return outputFile;
+    }
+    public void setOutputFile(File outputFile) {
+        this.outputFile = outputFile;
+    }
 
     public String getInputFilePath() {
         return inputFilePath;

@@ -16,5 +16,8 @@ Assignments for Java module
   - StringFormatException.java
   - StringLengthOutOfBoundsException.java
 - Class with methods for reading from a file and writing in a file (**/src/main/java/org/example/assignment2/readers/ReadWriteFromFile.java)
-- Class with implementation of solution method and method that reads input strings from file and writes solutions in result file 
+- Class with implementation of solution method and method that reads input strings from file and writes solutions in result file (**/src/main/java/org/example/assignment2/FileIOSolution.java)
+
+**Notes:**
+- Custom exceptions used in class **ReadWriteFromFile.java** and class **FileIOSolution.java** (method **validateInputString** used for validating strings read from file).
 

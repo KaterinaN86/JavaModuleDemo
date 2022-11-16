@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="499fa514-3f10-4eae-9dcf-25a11ac259f5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/assignment2/readers/ReadWriteFromFileTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assignment2/FileIOSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assignment2/FileIOSolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assignment2/exceptions/StringLengthOutOfBounds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assignment2/exceptions/StringLengthOutOfBoundsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assignment2/readers/ReadWriteFromFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assignment2/readers/ReadWriteFromFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/inputStrings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/inputStrings.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/results.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/results.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -39,7 +44,10 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -47,11 +55,17 @@
       <recent name="C:\Users\kneumova\IdeaProjects\JavaModuleDemo\src\main\resources" />
       <recent name="C:\Users\kneumova\IdeaProjects\JavaModuleDemo\src\main\java\org\example\assignment2" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.example.assignment2.readers" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.assignment2" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="JavaModuleDemo" />
@@ -65,9 +79,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in JavaModuleDemo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaModuleDemo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadWriteFromFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaModuleDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.assignment2.readers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.assignment2.readers" />
+      <option name="MAIN_CLASS_NAME" value="org.example.assignment2.readers.ReadWriteFromFileTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadWriteFromFileTest.readFromFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaModuleDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.assignment2.readers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.assignment2.readers" />
+      <option name="MAIN_CLASS_NAME" value="org.example.assignment2.readers.ReadWriteFromFileTest" />
+      <option name="METHOD_NAME" value="readFromFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ReadWriteFromFileTest" />
+        <item itemvalue="JUnit.All in JavaModuleDemo" />
+        <item itemvalue="JUnit.ReadWriteFromFileTest.readFromFile" />
       </list>
     </recent_temporary>
   </component>
@@ -92,5 +148,14 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/JavaModuleDemo$ReadWriteFromFileTest.ic" NAME="ReadWriteFromFileTest Coverage Results" MODIFIED="1668587913378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.assignment2.readers.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/JavaModuleDemo$ReadWriteFromFileTest_readFromFile.ic" NAME="ReadWriteFromFileTest.readFromFile Coverage Results" MODIFIED="1668543888039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.assignment2.readers.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/JavaModuleDemo$All_in_JavaModuleDemo.ic" NAME="All in JavaModuleDemo Coverage Results" MODIFIED="1668545464333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
