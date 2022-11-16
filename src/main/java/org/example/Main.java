@@ -3,7 +3,7 @@ package org.example;
 import org.example.assignment1.Solution;
 import org.example.assignment1.Solution2;
 import org.example.assignment2.FileIOSolution;
-import org.example.assignment2.readers.ReadWriteFromFile;
+import org.example.assignment3.RefactoredSolutionForTesting;
 
 import java.util.ArrayList;
 
@@ -37,6 +37,8 @@ public class Main {
         //Read and write operations
         FileIOSolution ioSolution = new FileIOSolution("BALLOON","src\\\\main\\\\resources\\\\inputStrings.txt");
         ioSolution.readInputAndWriteResult();
+        //finding solutions with refactored class for testing
+        RefactoredSolutionForTesting  newSolutions = new RefactoredSolutionForTesting("BALLOON","src\\\\main\\\\resources\\\\inputStrings.txt");
     }
 
 }

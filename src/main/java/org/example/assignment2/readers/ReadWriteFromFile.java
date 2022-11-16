@@ -13,18 +13,26 @@ public class ReadWriteFromFile {
     private File inputFile;
     private File outputFile;
 
+
     public ReadWriteFromFile(String filePath) {
         this.inputFilePath = filePath;
         this.inputFile = new File(filePath);
         this.outputFile = new File("src\\main\\resources\\results.txt");
     }
+
     public ReadWriteFromFile() {
     }
+
     public File getOutputFile() {
         return outputFile;
     }
+
     public void setOutputFile(File outputFile) {
         this.outputFile = outputFile;
+    }
+
+    public void setInputFile(File input) {
+        this.inputFile = input;
     }
 
     public String getInputFilePath() {
@@ -61,10 +69,10 @@ public class ReadWriteFromFile {
                 if (reader == null)
                     throw new ReaderNotInitializedException("Reader not initialized!", e);
                 System.out.println(e.getMessage());
-                e.printStackTrace();
+
             } catch (ReaderNotInitializedException | IncorrectFilePathException ex) {
                 System.out.println(ex.getMessage());
-                ex.printStackTrace();
+
             }
         } finally {
             try {
@@ -74,7 +82,7 @@ public class ReadWriteFromFile {
                     throw new ReaderNotInitializedException("Reader not initialized!");
             } catch (ReaderNotInitializedException | IOException e) {
                 if (reader == null)
-                    e.printStackTrace();
+                    e.getMessage();
                 else
                     System.out.println("File not closed.");
             }
@@ -82,32 +90,31 @@ public class ReadWriteFromFile {
         return text;
     }
 
-    public void writeInFile(ArrayList<String> text){
+    public void writeInFile(ArrayList<String> text) {
 
         BufferedWriter writer = null;
         FileWriter fileWriter = null;
 
-        try{
+        try {
             fileWriter = new FileWriter(this.outputFile);
             writer = new BufferedWriter(fileWriter);
-            for(String line : text){
+            for (String line : text) {
                 writer.write(line);
                 writer.newLine();
             }
-        }catch(NullPointerException | IOException e){
+        } catch (NullPointerException | IOException e) {
             try {
                 if (fileWriter == null)
                     throw new IncorrectFilePathException("Error in input file path!", e);
                 if (writer == null)
-                    throw new ReaderNotInitializedException("Reader not initialized!", e);
+                    throw new ReaderNotInitializedException("Writer not initialized!", e);
                 System.out.println(e.getMessage());
-                e.printStackTrace();
+                e.getMessage();
             } catch (ReaderNotInitializedException | IncorrectFilePathException ex) {
                 System.out.println(ex.getMessage());
-                ex.printStackTrace();
+                ex.getMessage();
             }
-        }
-        finally {
+        } finally {
             try {
                 if (writer != null)
                     writer.close();
@@ -115,7 +122,7 @@ public class ReadWriteFromFile {
                     throw new ReaderNotInitializedException("Reader not initialized!");
             } catch (ReaderNotInitializedException | IOException e) {
                 if (writer == null)
-                    e.printStackTrace();
+                    e.getMessage();
                 else
                     System.out.println("File not closed.");
             }
