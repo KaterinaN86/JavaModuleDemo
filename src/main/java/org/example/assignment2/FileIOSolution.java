@@ -85,7 +85,6 @@ public class FileIOSolution {
 
     //validating string read from file by using custom exceptions
     private void validateInputString(String in) throws StringLengthOutOfBoundsException, StringFormatException {
-
         // the length of the string is validated first
         if (in.length() <= 0 && in.length() > 200000)
             throw new StringLengthOutOfBoundsException("Input string length is out of bounds!");
