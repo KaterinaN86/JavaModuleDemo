@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="499fa514-3f10-4eae-9dcf-25a11ac259f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/assignment2/readers/ReadWriteFromFileTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assignment2/FileIOSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assignment2/FileIOSolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assignment2/readers/ReadWriteFromFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assignment2/readers/ReadWriteFromFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/inputStrings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/inputStrings.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/results.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/results.txt" afterDir="false" />
-    </list>
+    <list default="true" id="499fa514-3f10-4eae-9dcf-25a11ac259f5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
