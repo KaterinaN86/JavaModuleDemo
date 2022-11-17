@@ -21,3 +21,9 @@ Assignments for Java module
 **Notes:**
 - Custom exceptions used in class **ReadWriteFromFile.java** and class **FileIOSolution.java** (method **validateInputString** used for validating strings read from file).
 
+## 2. Testing
+- Test class for ReadWriteFromFile.java  (**\src\test\java\org\example\assignment2\readers\ReadWriteFromFileTest.java)
+- Test class for RefactoredSolutionForTesting.java  (****\src\test\java\org\example\assignment3\RefactoredSolutionForTestingTest.java)
+
+**Notes:**
+- Refactored **ReadWriteFromFile.java** and **FileIOSolution.java** (created classes **RefactoredSolutionForTesting.java** and **Result.java** in package **\src\main\java\org\example\assignment3**).

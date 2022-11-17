@@ -8,16 +8,6 @@ import org.example.assignment2.readers.ReadWriteFromFile;
 import java.util.ArrayList;
 
 public class RefactoredSolutionForTesting {
-    //inner class used to store detailed information about the result from shortening a string
-    class Result {
-        public String result;
-        public boolean isShortened;
-
-        public Result(String result, boolean isShortened) {
-            this.result = result;
-            this.isShortened = isShortened;
-        }
-    }
 
     /**
      * the word that is being searched for
@@ -56,21 +46,6 @@ public class RefactoredSolutionForTesting {
         this.inputText = inputText;
     }
 
-    public ArrayList<String> getSolutions() {
-        return solutions;
-    }
-
-    public void setSolutions(ArrayList<String> solutions) {
-        this.solutions = solutions;
-    }
-
-    public String getWord() {
-        return word;
-    }
-
-    public void setWord(String word) {
-        this.word = word;
-    }
 
     /**
      * Helper method that removes a letter from the input string by using the index
@@ -79,7 +54,7 @@ public class RefactoredSolutionForTesting {
      * @param index (position of letter to be removed)
      * @return (String without specified letter
      */
-    private String trimInputString(String s, int index) {
+     String trimInputString(String s, int index) {
         return s.substring(0, index) + s.substring(index + 1);
     }
 
@@ -113,7 +88,7 @@ public class RefactoredSolutionForTesting {
     }
 
     //validating string read from file by using custom exceptions
-    private void validateInputString(String in) {
+     void validateInputString(String in) {
         // the length of the string is validated first
         if (in.length() <= 0 && in.length() > 200000)
             throw new StringLengthOutOfBoundsException("Input string length is out of bounds!");

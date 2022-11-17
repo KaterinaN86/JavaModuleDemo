@@ -1,5 +1,0 @@
-Number of moves for word BAONXXOLL : 1
-Number of moves for word BAOOLLNNOLOLGBAX : 2
-Number of moves for word QAWABAWONL : 0
-Number of moves for word ONLABLABLOON : 1
-Number of moves for word HEYBALLOONHOWAREYOUBALLOONMYBALLOONHEYBALLOON : 4

@@ -12,7 +12,9 @@ public class ReadWriteFromFile {
     private String inputFilePath;
     private File inputFile;
     private File outputFile;
+     private FileReader fileReader = null;
 
+    private BufferedReader reader=null;
 
     public ReadWriteFromFile(String filePath) {
         this.inputFilePath = filePath;
@@ -35,6 +37,10 @@ public class ReadWriteFromFile {
         this.inputFile = input;
     }
 
+    public File getInputFile() {
+        return this.inputFile;
+    }
+
     public String getInputFilePath() {
         return inputFilePath;
     }
@@ -43,17 +49,24 @@ public class ReadWriteFromFile {
         this.inputFilePath = inputFilePath;
     }
 
+    public FileReader getFileReader() {
+        return fileReader;
+    }
+
+    public BufferedReader getReader() {
+        return reader;
+    }
+
     public ArrayList<String> readFromFile() {
-        BufferedReader reader = null;
-        FileReader fileReader = null;
         ArrayList<String> text = new ArrayList<String>();
         String line;
         boolean isEmpty = true;
+
         try {
             //if fileReader is not initialized properly FileNotFoundException is thrown
             fileReader = new FileReader(this.inputFile);
             //if we don't initialize our reader properly we get NullPointerException
-            reader = new BufferedReader(fileReader);
+             reader = new BufferedReader(fileReader);
             while ((line = reader.readLine()) != null) {
                 if (line != "")
                     isEmpty = false;
@@ -91,9 +104,8 @@ public class ReadWriteFromFile {
     }
 
     public void writeInFile(ArrayList<String> text) {
-
+        FileWriter fileWriter=null;
         BufferedWriter writer = null;
-        FileWriter fileWriter = null;
 
         try {
             fileWriter = new FileWriter(this.outputFile);

@@ -39,6 +39,8 @@ public class Main {
         ioSolution.readInputAndWriteResult();
         //finding solutions with refactored class for testing
         RefactoredSolutionForTesting  newSolutions = new RefactoredSolutionForTesting("BALLOON","src\\\\main\\\\resources\\\\inputStrings.txt");
+        newSolutions.readInputStrings();
+        newSolutions.writeResult();
     }
 
 }
