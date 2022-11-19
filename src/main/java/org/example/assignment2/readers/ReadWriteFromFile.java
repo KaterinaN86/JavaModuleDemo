@@ -117,7 +117,7 @@ public class ReadWriteFromFile {
         } catch (NullPointerException | IOException e) {
             try {
                 if (fileWriter == null)
-                    throw new IncorrectFilePathException("Error in input file path!", e);
+                    throw new IncorrectFilePathException("Error in output file path!", e);
                 if (writer == null)
                     throw new ReaderNotInitializedException("Writer not initialized!", e);
                 System.out.println(e.getMessage());
@@ -131,7 +131,7 @@ public class ReadWriteFromFile {
                 if (writer != null)
                     writer.close();
                 else
-                    throw new ReaderNotInitializedException("Reader not initialized!");
+                    throw new ReaderNotInitializedException("Writer not initialized!");
             } catch (ReaderNotInitializedException | IOException e) {
                 if (writer == null)
                     e.getMessage();
